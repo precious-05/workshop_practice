@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The GitHub Workflow: Workshop Hub</title>
+  <!-- Font Awesome 6 (free) — real GitHub icon via CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============ HERO SECTION ============ -->
+  <header class="hero">
+    <div class="container">
+      <p class="badge">
+        <i class="fab fa-github" style="margin-right: 6px;"></i> Microsoft Learn Student Ambassador Workshop
+      </p>
+      <h1>The GitHub Workflow</h1>
+      <p class="subtitle">From Your First Commit to Cloud Deployment</p>
+      <p class="hook">Your code deserves more than just sitting in a folder.</p>
+      <div class="hero-meta">
+        <span id="workshop-date">Workshop Date: Loading...</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ WHAT YOU'LL LEARN ============ -->
+  <section class="section">
+    <div class="container">
+      <h2>What You'll Learn</h2>
+      <div class="topics-grid">
+        <div class="topic-card">
+          <h3><i class="fab fa-git-alt"></i> Git Fundamentals</h3>
+          <p>Track changes, stage commits, and understand the working directory vs. repository.</p>
+        </div>
+        <div class="topic-card">
+          <h3><i class="fab fa-github"></i> GitHub Collaboration</h3>
+          <p>Push code to remote repositories and understand branches and remotes.</p>
+        </div>
+        <div class="topic-card">
+          <h3><i class="fas fa-code-branch"></i> GitHub Actions</h3>
+          <p>Automate builds and deployments with YAML workflows and CI/CD pipelines.</p>
+        </div>
+        <div class="topic-card">
+          <h3><i class="fab fa-microsoft"></i> Azure Deployment</h3>
+          <p>Deploy a real static site to Microsoft Azure Static Web Apps.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LIVE DEMO STATUS ============ -->
+  <section class="section section-alt">
+    <div class="container">
+      <h2><i class="fab fa-github" style="margin-right: 8px;"></i> Live Demo Status</h2>
+      <p class="status-label">This value is controlled by a single JavaScript variable:</p>
+      <div class="status-box">
+        <code id="demo-status">Loading...</code>
+      </div>
+      <p class="status-note">
+        When your instructor changes this value, commits it, and pushes to GitHub,
+        the GitHub Actions workflow will redeploy this site automatically.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ INTERACTIVE CHECKLIST ============ -->
+  <section class="section">
+    <div class="container">
+      <h2><i class="fas fa-list-check" style="margin-right: 8px;"></i> Workshop Checklist</h2>
+      <button id="toggle-checklist" class="btn">Show Checklist</button>
+      <ul id="checklist" class="checklist hidden">
+        <li>Create a GitHub account</li>
+        <li>Install Git and configure your username and email</li>
+        <li>Initialize a local repository with <code>git init</code></li>
+        <li>Make your first commit</li>
+        <li>Push your code to GitHub</li>
+        <li>Connect your repository to Azure Static Web Apps</li>
+        <li>Watch GitHub Actions deploy your site</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <p><i class="fab fa-github"></i> Built for the GitHub Workflow Workshop · Powered by HTML, CSS, and Azure Static Web Apps</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
